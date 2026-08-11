@@ -318,21 +318,33 @@ header {
 }
 
 /* CTA FINAL */
+/* CTA FINAL */
 .cta-final {
   background: var(--red);
   color: var(--light);
-  text-align: center;
   padding: 90px 0;
   position: relative;
   overflow: hidden;
+
+  display: flex;              
+  justify-content: space-between;
+  align-items: center;
 }
 
-.cta-final h2 {
-  font-size: 2.6rem;
-  margin: 20px 0;
+/* Contenu texte */
+.cta-final .container {
+  max-width: 600px;           
+  text-align: left;           
 }
 
-.cta-final p { color: rgba(255,255,255,0.85); margin-bottom: 30px; }
+/* Image du logo */
+.Imglogo {
+  width: 180px;             
+  height: auto;
+  margin-right: 100px;         
+  opacity: 0.9;               
+}
+
 
 /* FOOTER */
 footer {
@@ -379,6 +391,10 @@ footer a:hover { opacity: 1; color: var(--gold); }
   color: var(--text-muted);
 }
 
+.logoImg{
+    height: 50px;   /* ajuste ici */
+    width: auto;
+}
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .savoir-grid,
