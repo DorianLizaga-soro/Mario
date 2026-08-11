@@ -1,136 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Chez Mario - Pizzeria</title>
-<meta name="description" content="La pizza la plus stylée depuis la promo CDUI, testée et approuvée par 14 militaires en reconversion.">
-<link rel="stylesheet" href="styleeee.css">
+  <meta charset="UTF-8">
+  <title>Chez Mario – Pizzeria</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- 🕵️ Easter egg n°1 : si tu lis ce commentaire, va dire à Wassila que t'as trouvé le premier oeuf caché, +1 point bonus -->
+<!-- HEADER -->
+<header>
+  <div class="container nav">
+    <div class="logo">Chez Mario</div>
 
-<div class="nav">
-  <a href="#">Accueil</a>
-  <a href="#">Menu</a>
-  <a href="#">A propos</a>
-  <a href="#">Contact
-  <a href="#">Réservation en ligne cliquez ici</a>
-</div>
+    <nav class="links">
+      <a href="#Accueil">Accueil</a>
+      <a href="#Menu">Menu</a>
+      <a href="#Savoir‑faire">Savoir‑faire</a>
+      <a href="#Apropos">À propos</a>
+      <a href="#Commander" class="btn btn-red">Commander</a>
+    </nav>
+  </div>
+</header>
 
-<h1>CHEZ MARIO — LA MEILLEURE PIZZA DE LA VILLE !!!</h1>
+<!-- HERO -->
+<section class="hero" id="Accueil">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1>La meilleure pizza de la ville</h1>
+      <p>Depuis 1998, nous servons des pizzas authentiques italiennes faites maison avec des produits frais sélectionnés avec soin.</p>
 
-<div class="hero">
-  <h2>Bienvenue chez nous
-  <p>Depuis 1998 nous servons des pizzas authentiques italiennes faites maison avec des produits frais et de qualité sélectionnés avec soin par notre chef (qui a appris Blender le week-end dernier, ça se voit sur la déco).</p>
-  <button class="blink">COMMANDER MAINTENANT</button>
-</div>
+      <div class="hero-buttons">
+        <a class="btn btn-red">Commander</a>
+        <a class="btn btn-outline">Voir le menu</a>
+      </div>
+    </div>
 
-<div class="cards">
-  <div class="crad" id="card1">
-    <h3>Pizza Margherita</h3>
-    <img src="https://via.placeholder.com/500x300">
-    <p>Tomate, mozzarella, basilic frais, huile d'olive extra vierge. Un grand classique italien préparé selon la recette traditionnelle napolitaine.
-    <span class="price">9,50 €</span>
+    <div class="hero-img">
+      <img src="images/hero.jpg" alt="Pizza">
+    </div>
   </div>
 
-  <div class="card" id="card1">
-    <h3>Pizza Quatre Fromages</h3>
-    <img src="https://via.placeholder.com/500x300" alt="pizza">
-    <p>Mozzarella, gorgonzola, parmesan, chèvre. Pour les amateurs de fromage, une explosion de saveurs à chaque bouchée garantie.</p>
-    <span class="price">11,00 €</span>
-  </div>
+  <div class="wave"></div>
+</section>
 
-  <div class="card" id="card3">
-    <h3>Pizza Kahoot</h3>
-    <img src="https://via.placeholder.com/500x300" alt="pizza">
-    <p>Quizz, Stop Kahoot, Conforama, Lt Bus. Un quizz parfait entre simplicité et humour pour tous.</p>
-    <span class="price">10,50 €</span>
-  </div>
+<!-- MENU -->
+<section class="menu" id="Menu">
+  <div class="container">
+    <h2>Nos pizzas</h2>
 
-  <div class="card" id="card4">
-    <h3>Pizza Calzone</h3>
-    <img src="https://via.placeholder.com/500x300" alt="pizza">
-    <p>Pizza pliée garnie de jambon, mozzarella, champignons et œuf. Croustillante à l'extérieur, fondante à l'intérieur.</p>
-    <span class="price">12,00 €</span>
-  </div>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="images/pizza1.jpg">
+        <h3>Margherita</h3>
+        <p>Tomate, mozzarella, basilic frais.</p>
+        <span class="price">9,50 €</span>
+      </div>
 
-  <div class="card" id="card5">
-    <h3>Pizza Vegetariana</h3>
-    <img src="https://via.placeholder.com/500x300" alt="pizza">
-    <p>Poivrons, courgettes, aubergines, oignons rouges, mozzarella. Fraîcheur et légèreté pour les amateurs de légumes grillés.</p>
-    <span class="price">10,00 €</span>
-  </div>
+      <div class="menu-card">
+        <img src="images/pizza2.jpg">
+        <h3>4 Fromages</h3>
+        <p>Mozzarella, gorgonzola, parmesan, chèvre.</p>
+        <span class="price">11,00 €</span>
+      </div>
 
-  <div class="card" id="card6">
-    <h3>Pizza Figma</h3>
-    <img src="https://via.placeholder.com/500x300" alt="pizza">
-    <p>Figmaaaaaaaaaaaaaaaaaaaaaaaaaaaa, Auto-layout, tomate, Composant. Pour les amateurs de sensations fortes et de saveurs relevées.</p>
-    <span class="price">11,50 €</span>
-  </div>
+      <div class="menu-card">
+        <img src="images/pizza3.jpg">
+        <h3>Regina</h3>
+        <p>Jambon, champignons, mozzarella.</p>
+        <span class="price">10,50 €</span>
+      </div>
 
-  <!-- 🕵️ Easter egg n°2 : cette carte elle n'apparaîtra nulle part si display:flex déborde mal, patience -->
-  <div class="card" id="card7">
-    <h3>Pizza Chrono</h3>
-    <img src="https://via.placeholder.com/500x300" alt="pizza">
-    <p>60 minutes de cuisson pile poil, ni plus ni moins. Attention à la casserole qui déborde si t'as pas fini à temps.</p>
-    <span class="price">60,00 min</span>
+      <div class="menu-card">
+        <img src="images/pizza4.jpg">
+        <h3>Calzone</h3>
+        <p>Pizza pliée garnie de jambon et mozzarella.</p>
+        <span class="price">12,00 €</span>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-<h2>Notre carte complète</h2>
-<table class="menu-table">
-  <tr>
-    <td>Pizza</td>
-    <td>Prix petite</td>
-    <td>Prix grande
-  </tr>
-  <tr>
-    <td>Margherita</td>
-    <td>7,50 €</td>
-    <td>9,50 €</td>
-  </tr>
-  <tr>
-    <td>4 Fromages</td>
-    <td>9,00 €
-    <td>11,00 €</td>
-  </tr>
-  <tr>
-    <td>Regina</td>
-    <td>8,50 €</td>
-    <td>10,50 €</td>
-  </tr>
-</table>
+<!-- SAVOIR-FAIRE -->
+<section class="savoir-faire" id="Savoir‑faire">
+  <div class="container savoir-grid">
+    <div class="sf-text">
+      <span class="badge">37 ans de passion</span>
+      <h2>Notre savoir‑faire</h2>
+      <p>Une expertise transmise depuis 1987, un four traditionnel, et des ingrédients sélectionnés avec soin.</p>
 
-<div class="avis">
-  <h2>Ce que disent nos clients</h2>
-  <div class="item">
-    <span>"Meilleure pizza de la ville, sans hésiter !" - Julie</span>
+      <ul class="sf-list">
+        <li>Pâte maison</li>
+        <li>Cuisson au feu de bois</li>
+        <li>Produits frais</li>
+        <li>Recettes authentiques</li>
+      </ul>
+    </div>
+
+    <img src="images/chef.jpg" class="sf-img">
+    <img src="images/four.jpg" class="sf-img">
   </div>
-  <div class="item">
-    <span>"Un accueil chaleureux et des produits frais." - Marc</span>
-  </div>
-  <div class="item">
-    <span>"On y retourne toutes les semaines en famille." - Sophie</span>
-  </div>
-  <div class="item">
-    <span>"J'ai commandé une pizza et j'ai reçu un cours de Blender à la place, mais elle était bonne quand même." - un stagiaire CDUI anonyme</span>
-  </div>
-</div>
+</section>
 
-<h2>Réservez une table</h2>
-<form>
-  <input type="text" placeholder="Nom">
-  <input type="text" placeholder="Téléphone">
-  <input type="text" placeholder="Nombre de personnes">
-  <button>Envoyer</button>
-</form>
+<!-- À PROPOS -->
+<section class="apropos" id="Apropos">
+  <div class="container apropos-grid">
+    <div class="apropos-text">
+      <h2>À propos</h2>
+      <p>Chez Mario, nous préparons des pizzas depuis plus de 30 ans.</p>
 
-<div class="footer">
-  <p>Chez Mario - 12 rue du Kahoot - Tel: 01.23.45.67.89 - © 2026 tous droits ne sont pas réservés</p>
-</div>
+      <div class="stats">
+        <div class="stat"><h3>1987</h3><p>Année de création</p></div>
+        <div class="stat"><h3>12 000+</h3><p>Pizzas servies</p></div>
+        <div class="stat"><h3>4.9 ⭐</h3><p>Note moyenne</p></div>
+      </div>
 
-<!-- Easter egg n°3 : le dernier oeuf caché. Si t'as ouvert l'inspecteur jusqu'ici, t'es exactement le genre de dev qu'on veut former. -->
+      <blockquote>“Une pizza, c’est de l’amour en rond.”</blockquote>
+    </div>
+
+    <div class="apropos-imgs">
+      <img src="images/team1.jpg">
+      <img src="images/team2.jpg">
+      <img src="images/team3.jpg">
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final" id="Commander">
+  <h2>Réservez une table</h2>
+  <a class="btn btn-light">Réserver maintenant</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h3>Chez Mario</h3>
+      <p>La meilleure pizza depuis 1987.</p>
+    </div>
+
+    <div>
+      <h4>Navigation</h4>
+      <a href="#">Accueil</a>
+      <a href="#">Menu</a>
+      <a href="#">À propos</a>
+    </div>
+
+    <div>
+      <h4>Horaires</h4>
+      <p>Lun–Sam : 11h–23h</p>
+      <p>Dim : 18h–23h</p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>12 rue du Kahoot</p>
+      <p>01 23 45 67 89</p>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
