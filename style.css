@@ -302,7 +302,7 @@ header {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-.apropos-imgs img { border-radius: var(--radius); height: 160px; object-fit: cover; }
+.apropos-imgs img { border-radius: var(--radius); height: auto; object-fit: cover; }
 
 .apropos-imgs blockquote {
   grid-column: 1 / -1;
