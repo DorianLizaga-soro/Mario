@@ -2,10 +2,11 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chez Mario – Pizzeria</title>
 
   <!-- Typographies Figma -->
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,13 +16,13 @@
 <!-- HEADER -->
 <header>
   <div class="container nav">
-    <div class="logo">Chez Mario</div>
+    <div class="logo"><span class="logo-icon">🍕</span>Chez Mario</div>
 
     <nav class="links">
       <a href="#Accueil">Accueil</a>
-      <a href="#Menu">Menu</a>
-      <a href="#SavoirFaire">Savoir‑faire</a>
+      <a href="#Menu">Nos pizzas</a>
       <a href="#Apropos">À propos</a>
+      <a href="#Contact">Contact</a>
       <a href="#Commander" class="btn btn-red">Commander</a>
     </nav>
   </div>
@@ -29,20 +30,18 @@
 
 <!-- HERO -->
 <section class="hero" id="Accueil">
-  <div class="container hero-grid">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
 
-    <div class="hero-text">
-      <h1>La vraie pizza italienne, chez Mario !</h1>
-      <p>Depuis 1987, Mario vous accueille dans sa pizzeria familiale pour vous faire vivre l’Italie dans l’assiette. Pâte maison, produits importés, feu de bois.</p>
+    <span class="badge badge-green">🌿 Pizzeria italienne authentique</span>
 
-      <div class="hero-buttons">
-        <a class="btn btn-red">Commander</a>
-        <a class="btn btn-outline">Voir le menu</a>
-      </div>
-    </div>
+    <h1>La vraie pizza<br><span class="accent">italienne,</span><br>chez Mario !</h1>
 
-    <div class="hero-img">
-      <img src="images/hero.jpg" alt="Pizza artisanale">
+    <p>Depuis 1987, Mario vous accueille dans sa pizzeria familiale pour vous faire vivre l’Italie dans l’assiette. Pâte maison, produits importés, feu de bois.</p>
+
+    <div class="hero-buttons">
+      <a href="#Menu" class="btn btn-red">🍕 Commander ma pizza</a>
+      <a href="#Menu" class="btn btn-outline-light">Découvrir nos pizzas</a>
     </div>
 
   </div>
@@ -54,36 +53,60 @@
 <!-- MENU -->
 <section class="menu" id="Menu">
   <div class="container">
-    <h2>Nos pizzas</h2>
+    <div class="section-head">
+      <span class="eyebrow eyebrow-red">Notre sélection</span>
+      <h2>Le menu de Mario</h2>
+      <p class="section-sub">Des recettes transmises de génération en génération, avec des ingrédients choisis pour leur qualité et leur authenticité.</p>
+    </div>
 
     <div class="menu-grid">
 
       <div class="menu-card">
-        <img src="images/margherita.avif">
-        <h3>Margherita</h3>
-        <p>Tomate San Marzano, mozzarella fior di latte, basilic frais.</p>
-        <span class="price">13 €</span>
+        <div class="menu-card-img">
+          <img src="images/margherita.avif" alt="Pizza Margherita">
+          <span class="price">13 €</span>
+        </div>
+        <div class="menu-card-body">
+          <h3>Margherita</h3>
+          <p>Tomate San Marzano, mozzarella fior di latte, basilic frais.</p>
+          <a href="#Commander" class="btn-link">Commander →</a>
+        </div>
       </div>
 
       <div class="menu-card">
-        <img src="images/4fromage.avif">
-        <h3>4 Fromages</h3>
-        <p>Mozzarella, gorgonzola, parmesan 24 mois, pecorino romano.</p>
-        <span class="price">16 €</span>
+        <div class="menu-card-img">
+          <img src="images/regina.avif" alt="Pizza Regina">
+          <span class="price">15 €</span>
+        </div>
+        <div class="menu-card-body">
+          <h3>Regina</h3>
+          <p>Tomate, mozzarella, jambon de Parme, champignons.</p>
+          <a href="#Commander" class="btn-link">Commander →</a>
+        </div>
       </div>
 
       <div class="menu-card">
-        <img src="images/regina.avif">
-        <h3>Regina</h3>
-        <p>Tomate, mozzarella, jambon de Parme, champignons.</p>
-        <span class="price">15 €</span>
+        <div class="menu-card-img">
+          <img src="images/4fromage.avif" alt="Pizza 4 Fromages">
+          <span class="price">16 €</span>
+        </div>
+        <div class="menu-card-body">
+          <h3>4 Fromages</h3>
+          <p>Mozzarella, gorgonzola, parmesan 24 mois, pecorino romano.</p>
+          <a href="#Commander" class="btn-link">Commander →</a>
+        </div>
       </div>
 
       <div class="menu-card">
-        <img src="images/diavola.avif">
-        <h3>Diavola</h3>
-        <p>Tomate épicée, mozzarella, salami piquant napolitain.</p>
-        <span class="price">15 €</span>
+        <div class="menu-card-img">
+          <img src="images/diavola.avif" alt="Pizza Diavola">
+          <span class="price">15 €</span>
+        </div>
+        <div class="menu-card-body">
+          <h3>Diavola</h3>
+          <p>Tomate épicée, mozzarella, salami piquant napolitain.</p>
+          <a href="#Commander" class="btn-link">Commander →</a>
+        </div>
       </div>
 
     </div>
@@ -94,46 +117,76 @@
 <section class="savoir-faire" id="SavoirFaire">
   <div class="container savoir-grid">
 
-    <div class="sf-text">
-      <span class="badge">37 ans de passion</span>
-      <h2>Notre savoir‑faire</h2>
-      <p>Une expertise transmise depuis 1987, un four traditionnel, et des ingrédients sélectionnés avec soin.</p>
-
-      <ul class="sf-list">
-        <li>Pâte maison</li>
-        <li>Cuisson au feu de bois</li>
-        <li>Produits frais</li>
-        <li>Recettes authentiques</li>
-      </ul>
+    <div class="sf-img-wrap">
+      <img src="images/chef.jpg" class="sf-img" alt="Chef pizzaiolo">
+      <div class="badge badge-gold sf-badge">
+        <strong>37</strong>
+        <span>ans de passion</span>
+      </div>
     </div>
 
-    <img src="images/chef.jpg" class="sf-img">
-    <img src="images/four.jpg" class="sf-img">
+    <div class="sf-text">
+      <span class="eyebrow eyebrow-gold">Notre savoir-faire</span>
+      <h2>L’art de la pizza<br>à la napolitaine</h2>
+      <p>Chaque pizza qui sort de notre four porte l’empreinte de décennies de pratique. Ici, pas de recettes express ni de produits industriels : seulement le respect de la tradition italienne et l’amour du travail bien fait.</p>
+
+      <ul class="sf-list">
+        <li>
+          <span class="sf-icon">🍕</span>
+          <div>
+            <h4>Pizza artisanale</h4>
+            <p>Façonnée à la main, slice par slice, avec amour.</p>
+          </div>
+        </li>
+        <li>
+          <span class="sf-icon">🧀</span>
+          <div>
+            <h4>Produits italiens</h4>
+            <p>Importés directement des meilleurs producteurs italiens.</p>
+          </div>
+        </li>
+        <li>
+          <span class="sf-icon">🍞</span>
+          <div>
+            <h4>Pâte maison</h4>
+            <p>Fermentée 48 h pour une légèreté et une saveur incomparables.</p>
+          </div>
+        </li>
+        <li>
+          <span class="sf-icon">🔥</span>
+          <div>
+            <h4>Feu de bois</h4>
+            <p>Cuisson à 450 °C dans notre four napolitain traditionnel.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
 
   </div>
 </section>
 
-<!-- À PROPOS -->
+<!-- À PROPOS / HISTOIRE -->
 <section class="apropos" id="Apropos">
   <div class="container apropos-grid">
 
     <div class="apropos-text">
-      <h2>À propos</h2>
-      <p>Chez Mario, nous préparons des pizzas depuis plus de 30 ans.</p>
+      <span class="eyebrow eyebrow-green">Notre histoire</span>
+      <h2>Chez Mario, c’est<br>l’Italie dans l’assiette</h2>
+
+      <p>Tout a commencé à Naples, en 1987, quand Mario Ferrante a décidé d’apporter un morceau de son Italie natale en France. Il a traversé les Alpes avec une valise, une recette de famille, et une passion inébranlable pour la vraie pizza.</p>
+      <p>Aujourd’hui, la famille s’agrandit mais les valeurs restent les mêmes : générosité, authenticité, et cette chaleur unique qui fait que nos clients reviennent depuis des décennies. Ici, tout le monde est accueilli comme à la maison.</p>
 
       <div class="stats">
-        <div class="stat"><h3>1987</h3><p>Année de création</p></div>
-        <div class="stat"><h3>12 000+</h3><p>Pizzas servies</p></div>
-        <div class="stat"><h3>4.9 ⭐</h3><p>Note moyenne</p></div>
+        <div class="stat"><h3>1987</h3><p>Fondée à Paris</p></div>
+        <div class="stat"><h3>12 000+</h3><p>Pizzas par an</p></div>
+        <div class="stat"><h3>4.9 ⭐</h3><p>Note Google</p></div>
       </div>
-
-      <blockquote>“Une pizza, c’est de l’amour en rond.”</blockquote>
     </div>
 
     <div class="apropos-imgs">
-      <img src="images/team1.jpg">
-      <img src="images/team2.jpg">
-      <img src="images/team3.jpg">
+      <img src="images/team1.jpg" alt="Intérieur de la pizzeria">
+      <img src="images/team2.jpg" alt="Pizza fraîchement préparée">
+      <blockquote>“La pizza, c’est l’amour à partager.”</blockquote>
     </div>
 
   </div>
@@ -141,38 +194,59 @@
 
 <!-- CTA FINAL -->
 <section class="cta-final" id="Commander">
-  <h2>Réservez une table</h2>
-  <a class="btn btn-light">Réserver maintenant</a>
+  <div class="container">
+    <span class="badge badge-light-outline">Commandez en ligne</span>
+    <h2>Une pizza ?<br>On s’en occupe !</h2>
+    <p>Livraison à domicile ou à emporter — votre pizza napolitaine est prête en 20 minutes.</p>
+    <a class="btn btn-light">🍕 Commander maintenant</a>
+  </div>
 </section>
 
 <!-- FOOTER -->
-<footer>
+<footer id="Contact">
   <div class="container footer-grid">
 
     <div>
-      <h3>Chez Mario</h3>
-      <p>La meilleure pizza depuis 1987.</p>
+      <div class="logo"><span class="logo-icon">🍕</span>Chez Mario</div>
+      <p>Pizzeria italienne authentique depuis 1987. L’Italie dans votre assiette, à chaque bouchée.</p>
+      <div class="socials">
+        <a href="#">▲</a>
+        <a href="#">📷</a>
+        <a href="#">🎵</a>
+      </div>
     </div>
 
     <div>
       <h4>Navigation</h4>
       <a href="#Accueil">Accueil</a>
-      <a href="#Menu">Menu</a>
+      <a href="#Menu">Nos pizzas</a>
       <a href="#Apropos">À propos</a>
+      <a href="#Contact">Contact</a>
+      <a href="#">Mentions légales</a>
     </div>
 
     <div>
       <h4>Horaires</h4>
-      <p>Lun–Sam : 11h–23h</p>
-      <p>Dim : 18h–23h</p>
+      <p class="label">LUN – VEN</p>
+      <p>11h30 – 14h30</p>
+      <p class="label">LUN – VEN</p>
+      <p>18h00 – 22h30</p>
+      <p class="label">SAM – DIM</p>
+      <p>12h00 – 23h00</p>
     </div>
 
     <div>
       <h4>Contact</h4>
-      <p>12 rue du Kahoot</p>
-      <p>01 23 45 67 89</p>
+      <p>📍 14 rue de la Paix, 75002 Paris</p>
+      <p>📞 +33 1 45 67 89 01</p>
+      <p>✉️ bonjour@chezmario.fr</p>
     </div>
 
+  </div>
+
+  <div class="footer-bottom container">
+    <p>© 2026 Chez Mario. Tous droits réservés.</p>
+    <p>Fait avec 💗 et beaucoup de basilic 🍕</p>
   </div>
 </footer>
 
