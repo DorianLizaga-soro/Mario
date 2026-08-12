@@ -25,6 +25,35 @@
   --body: "Nunito", sans-serif;
 }
 
+
+[data-theme="dark"] {
+  --red: #a8362b;
+  --red-dark: #7c271e;
+  --dark: #f3ece3;        /* devient la couleur d'encre (texte clair) */
+  --dark-soft: #e4d9cb;
+  --cream: #17110c;       /* remplace les sections claires (menu, apropos) */
+  --light: #0e0c0a;        /* devient le fond de page sombre */
+  --gold: #d9a94e;
+  --green: #7c8b4e;
+  --text-muted: #b4a99c;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --title: "Pacifico", cursive;
+  --body: "Nunito", sans-serif;
+}
+
+[data-theme="dark"] header,
+[data-theme="dark"] footer,
+[data-theme="dark"] .savoir-faire {
+  background: var(--cream);
+  color: var(--dark);
+}
+
+[data-theme="dark"] .links a,
+[data-theme="dark"] footer a {
+  color: var(--dark);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -180,7 +209,7 @@ header {
   min-height: 90vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(120deg, rgba(20, 12, 8, 0.88) 0%, rgba(20, 12, 8, 0.55) 55%, rgba(20, 12, 8, 0.3) 100%), url('images/hero.jpg') center/cover no-repeat;
+  background: linear-gradient(120deg, rgba(20, 12, 8, 0.88) 0%, rgba(20, 12, 8, 0.55) 55%, rgba(20, 12, 8, 0.3) 100%), url('images/hero.webp') center/cover no-repeat;
   color: var(--light);
   padding: 100px 0 140px;
 }

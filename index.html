@@ -7,7 +7,7 @@
 
   <!-- Typographies Figma -->
   <link rel="shortcut icon" href="images/icons8-pizza-64.png" type="image/x-icon">
-
+ 
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,14 +16,16 @@
 <!-- HEADER -->
 <header>
   <div class="container nav">
-    <div class="logo"><span class="logo-icon"><img src="images/logo139.png" class="logoImg" alt="logo"></span>Chez La 139</div>
+    <div class="logo"><span class="logo-icon"><img src="images/logo139_compressed.webp" class="logoImg" alt="logo"></span>Chez La 139</div>
 
     <nav class="links">
+      
       <a href="#Accueil">Accueil</a>
       <a href="#Menu">Nos pizzas</a>
       <a href="#Apropos">À propos</a>
       <a href="#Contact">Contact</a>
-      <a href="#Commander" class="btn btn-red">Commander</a>
+      <button class="btn btn-red">Commander</button>
+      <button id="theme-toggle" class="btn btn-red">🌙 Mode sombre</button>
     </nav>
   </div>
 </header>
@@ -41,7 +43,7 @@
 
     <div class="hero-buttons">
       <a href="#Menu" class="btn btn-red">🍕 Commander ma pizza</a>
-      <a href="#Menu" class="btn btn-outline-light">Découvrir nos pizzas</a>
+      <a href="#Menu" class="btn btn-red">Découvrir nos pizzas</a>
     </div>
 
   </div>
@@ -63,7 +65,7 @@
 
       <div class="menu-card">
         <div class="menu-card-img">
-          <img src="images/margherita.avif" alt="Pizza Margherita">
+          <img src="images/margherita_compressed.webp" alt="Pizza Margherita">
           <span class="price">13 €</span>
         </div>
         <div class="menu-card-body">
@@ -75,7 +77,7 @@
 
       <div class="menu-card">
         <div class="menu-card-img">
-          <img src="images/regina.avif" alt="Pizza Regina">
+          <img src="images/regina_compressed.webp" alt="Pizza Regina">
           <span class="price">15 €</span>
         </div>
         <div class="menu-card-body">
@@ -87,7 +89,7 @@
 
       <div class="menu-card">
         <div class="menu-card-img">
-          <img src="images/4fromage.avif" alt="Pizza 4 Fromages">
+          <img src="images/4fromage_compressed.webp" alt="Pizza 4 Fromages">
           <span class="price">16 €</span>
         </div>
         <div class="menu-card-body">
@@ -99,7 +101,7 @@
 
       <div class="menu-card">
         <div class="menu-card-img">
-          <img src="images/diavola.avif" alt="Pizza Diavola">
+          <img src="images/diavola_compressed.webp" alt="Pizza Diavola">
           <span class="price">15 €</span>
         </div>
         <div class="menu-card-body">
@@ -118,7 +120,7 @@
   <div class="container savoir-grid">
 
     <div class="sf-img-wrap">
-      <img src="images/chef.jpg" class="sf-img" alt="Chef pizzaiolo">
+      <img src="images/chef_compressed.webp" class="sf-img" alt="Chef pizzaiolo">
       <div class="badge badge-gold sf-badge">
         <strong>37</strong>
         <span>ans de passion</span>
@@ -184,8 +186,8 @@
     </div>
 
     <div class="apropos-imgs">
-      <img src="images/interieur.jpg" alt="Intérieur de la pizzeria">
-      <img src="images/prep.jpg" alt="Pizza fraîchement préparée">
+      <img src="images/interieur_compressed.webp" alt="Intérieur de la pizzeria">
+      <img src="images/prep_compressed.webp" alt="Pizza fraîchement préparée">
       <blockquote>“La pizza, c’est l’amour à partager.”</blockquote>
     </div>
 
@@ -201,7 +203,7 @@
     <a class="btn btn-light">🍕 Commander maintenant</a>
   </div>
   <div>
-    <img src="images/logo139.png" class="Imglogo" alt="logo">
+    <img src="images/logo139_compressed.webp" class="Imglogo" alt="logo">
   </div>
 </section>
 
@@ -210,7 +212,7 @@
   <div class="container footer-grid">
 
     <div>
-      <div class="logo"><span class="logo-icon"><img src="images/logo139.png" class="logoImg" alt="logo"></span>Chez La 139</div>
+      <div class="logo"><span class="logo-icon"><img src="images/logo139_compressed.webp" class="logoImg" alt="logo"></span>Chez La 139</div>
       <p>Pizzeria italienne authentique depuis 1987. L’Italie dans votre assiette, à chaque bouchée.</p>
       <div class="socials">
         <a href="#">▲</a>
@@ -253,5 +255,9 @@
   </div>
 </footer>
 
+
+
+<script src="darktheme.js"></script>
 </body>
+
 </html>
